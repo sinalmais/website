@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Nós - Centro de explicações</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="header-logo-link">
+            <img src="img/logo.png" alt="Centro de explicações" class="logo-img">
+        </a>
+        <a href="sobre.html" class="btn-sobre">Sobre Nós</a>
+        <a href="contactos.html" class="btn-contactos">Contactos</a>
+        <a href="inscricoes.html" class="btn-inscricoes">Inscrições</a>
+    </header>
+    <main class="sobre-main">
+        <h2>Sobre Nós</h2>
+        <p>Bem-vindo ao Centro de Explicações Sinal +!</p>
+        <p>Aqui, acreditamos que cada aluno é único e merece atenção personalizada para alcançar o seu máximo potencial. Fundado em 2025, o nosso centro nasceu com a missão de apoiar o percurso escolar de crianças, jovens e adultos com dedicação, carinho e profissionalismo.
+
+Contamos com uma equipa de professores experientes e motivados, prontos para esclarecer dúvidas, reforçar aprendizagens e cultivar a confiança dos nossos alunos. Oferecemos explicações individuais ou em pequenos grupos, adaptadas ao ritmo e às necessidades de cada um.
+
+O nosso compromisso é com o sucesso académico e o bem-estar de quem nos procura. Mais do que um centro de estudos, somos um espaço de apoio, motivação e desenvolvimento.
+
+Juntos, construímos o caminho para um futuro com mais conhecimento, segurança e oportunidades.
+
+</p>
+    </main>
+<!--
+    <main>
+        <section class="espaco">
+            <h2>O nosso espaço</h2>
+            <div class="carrossel">
+                <button class="carrossel-btn" id="prev">&#10094;</button>
+                <img id="carrossel-img" src="img/espaco1.jpg" alt="Espaço 1">
+                <button class="carrossel-btn" id="next">&#10095;</button>
+            </div>
+            <div class="carrossel-thumbs">
+                <img src="img/espaco1.jpg" class="thumb" onclick="showSlide(0)">
+                <img src="img/espaco2.jpg" class="thumb" onclick="showSlide(1)">
+                <img src="img/espaco3.jpg" class="thumb" onclick="showSlide(2)">
+            </div>
+        </section>
+    </main> */
+
+    <script>
+        // Carrossel simples
+        const imagens = [
+            "img/espaco1.jpg",
+            "img/espaco2.jpg",
+            "img/espaco3.jpg"
+        ];
+        let slideAtual = 0;
+        const img = document.getElementById('carrossel-img');
+        document.getElementById('prev').onclick = function() {
+            slideAtual = (slideAtual - 1 + imagens.length) % imagens.length;
+            img.src = imagens[slideAtual];
+        };
+        document.getElementById('next').onclick = function() {
+            slideAtual = (slideAtual + 1) % imagens.length;
+            img.src = imagens[slideAtual];
+        };
+        window.showSlide = function(idx) {
+            slideAtual = idx;
+            img.src = imagens[slideAtual];
+        }
+    </script>
+    -->
+
+     <footer class="footer-simples">
+    <div class="footer-simples-content">
+        <div>
+            967 028 502<br>
+            sabermais.explicacoes@gmail.com
+        </div>
+        <div>
+             R. José Manuel Cerqueira Afonso dos Santos 37<br>
+            2685-402 Prior Velho
+        </div>
+    </div>
+    <div class="footer-simples-copy">
+        2025 © Sinal +  Todos os direitos reservados
+    </div>
+    <a class="footer-whats" href="https://wa.me/351939253045?text=Olá+gostaria+de+saber+mais+sobre+as+explicações" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</footer>
+</body>
+</html>

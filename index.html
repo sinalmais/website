@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Simples</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
+</head>
+
+
+<body>
+    <header>
+        <a href="index.html" class="header-logo-link">
+            <img src="img/logo.png" alt="Centro de explicações" class="logo-img">
+        </a>
+        <a href="sobre.html" class="btn-sobre">Sobre Nós</a>
+        <a href="contactos.html" class="btn-contactos">Contactos</a>
+        <a href="inscricoes.html" class="btn-inscricoes">Inscrições</a>
+    </header>
+
+    <section class="hero">
+        
+        <div class="box-txt">
+            <span class="slogan">Fala connosco e melhora as tuas notas!</span>
+            <h2>Apoio escolar de confiança,<br>resultados garantidos!</h2>
+            <p>Tens dificuldades numa disciplina?
+Nós explicamos, tu compreendes.
+Juntos, fazemos o caminho até ao sucesso.</p>
+            <a target="_blank" href="https://wa.me/5599999999999?text=Ol%C3%A1+gostaria+de+marcar+uma+consulta"
+                class="btn-hero">Marcar Explicação</a>
+        </div>
+    </section>
+
+    <section class="especialidades">
+        <div class="box-item">
+            <h3>Explicações Individuais</h3>
+            <p>Sessões personalizadas adaptadas ao ritmo e estilo de aprendizagem de cada aluno.
+Ideal para reforçar matérias específicas e esclarecer dúvidas em profundidade.</p>
+        </div>
+        <div class="box-item">
+            <h3>Explicações em Grupo</h3>
+            <p>Turmas pequenas com ambiente colaborativo e dinâmico.
+Perfeitas para alunos que aprendem melhor com partilha de ideias e exercícios em conjunto.</p>
+        </div>
+        <div class="box-item">
+            <h3>Preparação para Exames</h3>
+            <p>Apoio intensivo focado em testes intermédios, provas finais e exames nacionais.
+Estratégias de estudo, resolução de exames anteriores e gestão de tempo.</p>
+        </div>
+        <a target="_blank" href="https://wa.me/5599999999999?text=Ol%C3%A1+gostaria+de+marcar+uma+consulta"
+            class="m-top btn-hero">Marcar Explicação</a>
+
+    </section>
+
+    <!-- Novas caixas de disciplinas -->
+    <section class="disciplinas">
+        <div class="disciplina-item">
+            <span class="disciplina-icone"><i class="fa-solid fa-square-root-variable"></i></span>
+            Matemática
+        </div>
+        <div class="disciplina-item">
+            <span class="disciplina-icone"><i class="fa-solid fa-flask-vial"></i></span>
+            Física e Química
+        </div>
+        <div class="disciplina-item">
+            <span class="disciplina-icone"><i class="fa-solid fa-globe"></i></span>
+            Geografia
+        </div>
+        <div class="disciplina-item">
+            <span class="disciplina-icone"><i class="fa-solid fa-dna"></i></span>
+            Biologia e Geologia
+        </div>
+        <div class="disciplina-item">
+            <span class="disciplina-icone"><i class="fa-solid fa-book-open"></i></span>
+            Português
+        </div>
+        <div class="disciplina-item">
+            <span class="disciplina-icone"><i class="fa-solid fa-language"></i></span>
+            Francês
+        </div>
+
+        <div class="disciplina-item">
+            <span class="disciplina-icone"><i class="fa-solid fa-flag-usa"></i></span>
+            Inglês
+        </div>
+
+        <div class="disciplina-item">
+            <span class="disciplina-icone"><i class="fa-solid fa-drafting-compass"></i></span>
+            Geometria Descritiva
+        </div>
+
+        <div class="disciplina-item">
+            <span class="disciplina-icone"><i class="fa-solid fa-comments-dollar"></i></span>
+            Economia
+        </div>
+
+        <div class="disciplina-item">
+            <span class="disciplina-icone"><i class="fa-solid fa-landmark"></i></span>
+            História
+        </div>
+
+        <div class="disciplina-item">
+            <span class="disciplina-icone"><i class="fa-solid fa-book"></i></span>
+            Filosofia
+        </div>
+
+        
+
+
+        
+     
+    </section>
+
+    <section class="tabela-precos" style="margin: 40px auto; max-width: 700px;">
+        <h2 style="text-align:center; margin-bottom: 24px;">Tabela de Preços</h2>
+        <table style="width:100%; border-collapse:collapse; background:#fff; box-shadow:0 2px 12px #0001;">
+            <thead style="background:#C9B037; color:#fff;">
+                <tr>
+                    <th style="padding:12px;">Horas Semanais</th>
+                    <th style="padding:12px;">Individual</th>
+                    <th style="padding:12px;">Grupo (máximo 3 alunos)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="text-align:center;">
+                    <td style="padding:12px; font-weight:600;">1h </td>
+                    <td style="padding:12px;">22€/hora</td>
+                    <td style="padding:12px;">17.5€/hora</td>
+                </tr>
+                <tr style="text-align:center; background:#fff;">
+                    <td style="padding:12px; font-weight:600;">1h30 ou mais </td>
+                    <td style="padding:12px;">20€/hora</td>
+                    <td style="padding:12px;">15€/hora</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script>
+        //PEGAR O ELEMENTO
+        const doutora = document.getElementById('doutora');
+
+        //EVENTO QUANDO MOUSE ESTIVER POR CIMA DA IMAGEM
+        doutora.addEventListener('mouseover', function () {
+            doutora.src = "img/doutora2.webp";
+        });
+
+        //EVENTO QUANDO MOUSE SAIR DE CIMA DA IMAGEM
+        doutora.addEventListener('mouseout', function () {
+            doutora.src = "img/doutora3.webp";
+        });
+
+    </script>
+    
+     <footer class="footer-simples">
+    <div class="footer-simples-content">
+        <div>
+            967 028 502<br>
+            sabermais.explicacoes@gmail.com
+        </div>
+        <div>
+             R. José Manuel Cerqueira Afonso dos Santos 37<br>
+            2685-402 Prior Velho
+        </div>
+    </div>
+    <div class="footer-simples-copy">
+        2025 © Sinal +  Todos os direitos reservados
+    </div>
+    <a class="footer-whats" href="https://wa.me/351939253045?text=Olá+gostaria+de+saber+mais+sobre+as+explicações" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</footer>
+
+</body>
+
+</html>

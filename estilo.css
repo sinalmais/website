@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yesteryear&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    color: #111;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff; /* fundo branco */
+    height: 140px; /* igual ou maior que o logo */
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-bottom: 2px solid #FFD700; /* linha dourada opcional */
+}
+
+header h1 {
+    font-size: 60px;
+    color: #D4AF37; /* dourado */
+    font-family: 'Yesteryear', cursive;
+    font-weight: normal;
+}
+
+header h1,
+.header-logo-link {
+    font-family: "Yesteryear", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header-logo-link {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 135px; /* ou maior, conforme desejar */
+    width: auto;
+    display: block;
+}
+
+.btn-sobre,
+.btn-contactos,
+.btn-inscricoes {
+    background: #FFD700;
+    color: #111;
+    padding: 14px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-sobre:hover,
+.btn-contactos:hover,
+.btn-inscricoes:hover {
+    background: #C9B037;
+    color: #fff;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    background: url('img/students.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.7);
+    z-index: 1;
+}
+
+.hero .box-txt {
+    position: relative;
+    z-index: 2;
+}
+
+.box-img {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+}
+
+.responsiva {
+    max-width: 100%;
+}
+
+.box-txt {
+    display: flex;
+    flex-flow: row wrap;
+    width: 35%;
+}
+
+.box-txt span {
+    color: #111;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.box-txt h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 80px;
+    color: #111;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 70px;
+}
+
+.box-txt p {
+    color: #111;
+    margin-bottom: 30px;
+}
+
+.btn-hero {
+    background: #FFD700;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    color: #111;
+    border-radius: 5px;
+    transition: 0.5s all;
+    margin-bottom: 30px;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-hero:hover {
+    background: #C9B037;
+    color: #fff;
+}
+
+.box-item {
+    width: 30%;
+    height: 280px;
+    background: #fffbe6; /* branco levemente dourado */
+    margin: 5px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.especialidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.m-top {
+    margin-top: 30px;
+}
+
+
+
+/* Footer simples estilo imagem enviada */
+.footer-simples {
+    background: #fffbe6;
+    color: black;
+    padding: 40px 0 0 0;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-top: 2px solid #FFD700;
+}
+
+.footer-simples-content {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-simples-content div {
+    min-width: 220px;
+}
+
+.footer-simples-copy {
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 400;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-bottom: 25px;
+    width: 100%;
+    position: relative;
+}
+
+/* WhatsApp no rodapé lado direito */
+.footer-whats {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    z-index: 2;
+    color: #25D366;
+    font-size: 3rem;
+    transition: transform 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.footer-whats:hover {
+    transform: scale(1.08);
+    color: #128C7E;
+}
+
+/* Alinhar número e email no footer */
+.footer-contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.footer-contactos span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+}
+
+.footer-contactos i {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+@media (max-width: 700px) {
+    .footer-simples-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Restante código do site (carrossel, disciplinas, etc) */
+
+.espaco {
+    margin: 60px auto;
+    max-width: 1400px;
+    width: 98vw;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.espaco h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 300px;
+}
+
+.carrossel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.carrossel img {
+    width: 100%;
+    max-width: 700px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 24px #0002;
+}
+
+.carrossel-btn {
+    background: #ce4ec4;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background 0.3s;
+    z-index: 2;
+}
+
+.carrossel-btn:hover {
+    background: #da2387;
+}
+
+.carrossel-thumbs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carrossel-thumbs .thumb {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.7;
+    border: 2px solid transparent;
+    transition: opacity 0.2s, border 0.2s;
+}
+
+.carrossel-thumbs .thumb:hover {
+    opacity: 1;
+    border: 2px solid #ce4ec4;
+}
+
+.contacto-info {
+    max-width: 500px;
+    margin: 40px auto 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto-info h2, .contacto-info h3 {
+    text-align: center;
+}
+
+.contacto-info p, .contacto-info .email {
+    text-align: center;
+}
+
+.disciplinas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 60px auto 40px auto;
+    max-width: 1200px;
+}
+
+.disciplina-item {
+    position: relative; /* Necessário para o ::before */
+    overflow: hidden;   /* Garante que o overlay não saia da borda */
+    background: url('img/madeira.jpg') center center/cover no-repeat;
+    color: #744f32;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #0001;
+    padding: 30px 40px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 220px;
+    min-height: 70px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Para garantir contraste do texto */
+    
+}
+
+.disciplina-item::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.1); /* branco com 60% de opacidade */
+    z-index: 1;
+    pointer-events: none; /* Permite clicar nos conteúdos abaixo */
+}
+
+.disciplina-item > * {
+    position: relative;
+    z-index: 2;
+}
+
+.disciplina-item:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 6px 24pxrgb(255, 204, 165)1 ;
+    background: #dab79c;
+}
+
+.disciplina-icone {
+    font-size: 2rem;
+    color: #A47551;
+    min-width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adiciona ao estilo.css para tirar sublinhado e manter cor branca no logo */
+.header-logo-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Yesteryear', cursive;
+    font-size: 60px;
+    font-weight: normal;
+    transition: opacity 0.2s;
+}
+.header-logo-link:hover {
+    opacity: 0.7;
+}
+
+/* ...coloque este header em todas as páginas... */
+header h1 {
+    font-size: 60px;
+    color: #D4AF37; /* dourado */
+    font-family: 'Yesteryear', cursive;
+    font-weight: normal;
+}
+
+header h1,
+.header-logo-link {
+    font-family: "Yesteryear", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header-logo-link {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 140px; /* ou maior, conforme desejar */
+    width: auto;
+    display: block;
+}
+
+.btn-sobre,
+.btn-contactos,
+.btn-inscricoes {
+    background: #FFD700;
+    color: #111;
+    padding: 14px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-sobre:hover,
+.btn-contactos:hover,
+.btn-inscricoes:hover {
+    background: #C9B037;
+    color: #fff;
+}
+main.sobre-main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.tabela-precos h2 {
+    color: #FFD700;
+    text-align: left;
+    font-weight: 400;
+    margin-left: 24px;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.tabela-precos {
+    margin-top: 120px !important; /* aumenta o espaçamento acima da tabela */
+}
+
