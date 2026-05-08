@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preparação para Exames | Sinal +</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* HERO */
+        .hero-exames {
+            width: 100%;
+            min-height: 340px;
+            background: #C9B037;
+                
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero-content h1 {
+            color: #fff;
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .hero-content p {
+            color: #fff;
+            font-size: 1.1rem;
+            max-width: 1000px;
+            line-height: 1.6;
+        }
+
+        /* DISCIPLINAS */
+        .secao-disciplinas {
+            padding: 70px 8%;
+        }
+
+        .titulo-secao {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 50px;
+            color: #222;
+            position: relative;
+        }
+
+        .titulo-secao::after {
+            content: '';
+            width: 90px;
+            height: 4px;
+            background: #C9B037;
+            display: block;
+            margin: 12px auto 0;
+            border-radius: 10px;
+        }
+
+        .grupo-disciplinas {
+            margin-bottom: 60px;
+        }
+
+        .grupo-disciplinas h2 {
+            margin-bottom: 30px;
+            color: #C9B037;
+            font-size: 1.8rem;
+        }
+
+        .disciplinas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .disciplina-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 28px 22px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+            text-align: center;
+            border-top: 5px solid #C9B037;
+            cursor: pointer;
+        }
+
+        .disciplina-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .disciplina-card i {
+            font-size: 2.5rem;
+            color: #C9B037;
+            margin-bottom: 18px;
+        }
+
+        .disciplina-card h3 {
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+
+        .disciplina-card p {
+            line-height: 1.5;
+            color: #555;
+            font-size: 0.98rem;
+        }
+
+        /* CTA */
+        .cta-exames {
+            width: 100%;
+            padding: 70px 20px;
+            background: #C9B037;
+            text-align: center;
+        }
+
+        .cta-exames h2 {
+            color: #fff;
+            font-size: 2.2rem;
+            margin-bottom: 18px;
+        }
+
+        .cta-exames p {
+            color: #fff;
+            margin-bottom: 26px;
+            font-size: 1.05rem;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background: #fff;
+            color: #C9B037;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            background: #222;
+            color: #fff;
+        }
+
+        /* MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-content {
+            max-width: 700px;
+            width: 100%;
+        }
+
+        .modal-content img {
+            width: 100%;
+            max-height: 85vh;
+            object-fit: contain;
+            border-radius: 10px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+        <a href="index.html" class="header-logo-link">
+            <img src="img/logo.png" alt="Centro de explicações" class="logo-img">
+        </a>
+        <a href="sobre.html" class="btn-sobre">Sobre Nós</a>
+        <a href="contactos.html" class="btn-contactos">Contactos</a>
+        <a href="inscricoes.html" class="btn-inscricoes">Inscrições</a>
+    </header>
+
+<section class="hero-exames">
+    <div class="hero-content">
+        <h1>Preparação para Exames</h1>
+        <p> Prepara o teu futuro com as nossas explicações especializadas para o ensino básico e secundário, agora com cursos intensivos focados na preparação para exames e melhoria de notas. Garantimos um ensino de qualidade em turmas dinâmicas de 5 a 20 alunos, promovendo um ambiente de aprendizagem partilhada pelo valor acessível de apenas 7,50€/hora. 
+    </p> 
+        <p>Não deixes o teu sucesso ao acaso e garante já o teu lugar rumo aos melhores resultados!.</p>
+    </div>
+</section>
+
+<section class="secao-disciplinas">
+
+    <h1 class="titulo-secao">Disciplinas Disponíveis</h1>
+
+    <!-- SECUNDÁRIO -->
+    <div class="grupo-disciplinas">
+        <h2>Ensino Secundário</h2>
+
+        <div class="disciplinas-grid">
+
+            <div class="disciplina-card" data-img="img/mata.png">
+                <i class="fa-solid fa-square-root-variable"></i>
+                <h3>Matemática A</h3>
+                <p>Preparação intensiva para exames nacionais.</p>
+            </div>
+
+            <div class="disciplina-card" data-img="img/fqa.jpg">
+                <i class="fa-solid fa-flask-vial"></i>
+                <h3>Física e Química</h3>
+                <p>Resolução de exercícios e preparação prática.</p>
+            </div>
+
+            <div class="disciplina-card" data-img="img/gda.jpg">
+                <i class="fa-solid fa-drafting-compass"></i>
+                <h3>Geometria Descritiva</h3>
+                <p>Representação gráfica e treino de exame.</p>
+            </div>
+
+            <div class="disciplina-card" data-img="img/filosofia.jpg">
+                <i class="fa-solid fa-book"></i>
+                <h3>Filosofia</h3>
+                <p>Pensamento crítico e preparação para avaliação.</p>
+            </div>
+
+            <div class="disciplina-card" data-img="img/biologia.jpg">
+                <i class="fa-solid fa-dna"></i>
+                <h3>Biologia e Geologia</h3>
+                <p>Revisão teórica e exercícios práticos.</p>
+            </div>
+
+            <div class="disciplina-card" data-img="img/pt12.jpg">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>Português</h3>
+                <p>Interpretação e preparação para exame nacional.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BÁSICO -->
+    <div class="grupo-disciplinas">
+        <h2>Ensino Básico</h2>
+
+        <div class="disciplinas-grid">
+
+            <div class="disciplina-card" data-img="img/mat9.jpg">
+                <i class="fa-solid fa-square-root-variable"></i>
+                <h3>Matemática</h3>
+                <p>Consolidação de matérias essenciais.</p>
+            </div>
+
+            <div class="disciplina-card" data-img="img/pt9.jpg">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>Português</h3>
+                <p>Leitura, escrita e interpretação de texto.</p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="cta-exames">
+    <h2>Queres melhorar os teus resultados?</h2>
+    <p>Fala connosco e encontra o apoio ideal para alcançar os teus objetivos.</p>
+
+    <a target="_blank"
+        href="https://wa.me/351967028502?text=Olá+gostaria+de+saber+mais+sobre+a+preparação+para+exames"
+        class="btn-whatsapp">
+        Marcar Explicação
+    </a>
+</section>
+
+<!-- MODAL -->
+<div id="modalMat" class="modal" onclick="fecharModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <img id="modalImg" src="" alt="">
+    </div>
+</div>
+
+<footer class="footer-simples">
+    <div class="footer-simples-content">
+        <div>
+            967 028 502<br>
+            sinalmais.explicacoes@gmail.com
+        </div>
+        <div>
+             R. José Manuel Cerqueira Afonso dos Santos 37 R/c dto<br>
+            2685-402 Prior Velho
+        </div>
+    </div>
+    <div class="footer-simples-copy">
+        2025 © Sinal +  Todos os direitos reservados
+    </div>
+    <a class="footer-whats" href="https://wa.me/351967028502?text=Olá+gostaria+de+saber+mais+sobre+as+explicações" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</footer>
+
+<script>
+const cards = document.querySelectorAll(".disciplina-card");
+const modal = document.getElementById("modalMat");
+const modalImg = document.getElementById("modalImg");
+
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        const img = card.getAttribute("data-img");
+        modalImg.src = img;
+        modal.style.display = "flex";
+    });
+});
+
+function fecharModal() {
+    modal.style.display = "none";
+    modalImg.src = "";
+}
+</script>
+
+</body>
+</html>
